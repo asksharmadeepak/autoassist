@@ -13,46 +13,56 @@ class CustomerResultScreenState extends StatelessWidget {
     // TODO: implement build
     return Scaffold(
       appBar: AppBar(title: Text(customerSelectedValue)),
-      body: Column(children: <Widget>[
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            IconButton(
-              icon: Icon(choices[0].icon, size: 50),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(choices[1].icon, size: 50),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(choices[2].icon, size: 50),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.spaceAround,
-          children: <Widget>[
-            IconButton(
-              icon: Icon(choices[3].icon, size: 50,color: Colors.lightBlue),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(choices[4].icon, size: 50),
-              onPressed: () {},
-            ),
-            IconButton(
-              icon: Icon(choices[5].icon, size: 50),
-              onPressed: () {},
-            ),
-          ],
-        ),
-        Row(
-          mainAxisAlignment: MainAxisAlignment.center,
-
-        )
-      ],),
+      body: Column(
+        children: <Widget>[
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(choices[0].icon, size: 50),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(choices[1].icon, size: 50),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(choices[2].icon, size: 50),
+                onPressed: () {},
+              ),
+            ],
+          ),
+          Row(
+            mainAxisAlignment: MainAxisAlignment.spaceAround,
+            children: <Widget>[
+              IconButton(
+                icon: Icon(choices[3].icon, size: 50, color: Colors.lightBlue),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(choices[4].icon, size: 50),
+                onPressed: () {},
+              ),
+              IconButton(
+                icon: Icon(choices[5].icon, size: 50),
+                onPressed: () {},
+              ),
+            ],
+          ),
+          new Text(
+            "Address : Synechron Technologies , Pune MH India",
+            softWrap: true,
+            style: TextStyle(fontSize: 30),
+            textAlign: TextAlign.center,
+          ),
+          new Text(
+            "Working Hours : 9 To 5",
+            textAlign: TextAlign.center,
+            style: TextStyle(fontSize: 30),
+            softWrap: true,
+          ),
+        ],
+      ),
     );
   }
 }

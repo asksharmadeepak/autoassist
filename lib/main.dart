@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'core/form/business_screen.dart';
 import 'core/form/customer_screen.dart';
 
 void main() {
@@ -61,8 +62,9 @@ class _MyHomePageState extends State<MyHomePage> {
               padding: EdgeInsets.all(8.0),
               splashColor: Colors.blueAccent,
               onPressed: () {
-                /*...*/
-              },
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) =>  BusinessFormScreen()));              },
               child: Text(
                 "Register as Business",
                 style: TextStyle(fontSize: 25.0),
